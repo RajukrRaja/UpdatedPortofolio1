@@ -1,0 +1,67 @@
+/* Styles for the info container */
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(52, 43, 43);
+  padding: 20px;
+  margin-right: 2cm;
+  width: 100%;
+}
+
+/* Styles for the info section */
+.info-section {
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-left: -20cm;
+}
+
+/* Styles for the image section */
+.image-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-section img {
+  max-width: 100%;
+}
+
+/* Styles for the achievements */
+.achievements {
+  display: flex;
+  justify-content: space-between;
+}
+
+.achievement-group {
+  flex: 1;
+  padding: 20px;
+}
+
+.achievement-group h3 {
+  font-size: 1.2rem;
+}
+
+.achievement-group ul {
+  list-style: none;
+  padding: 0;
+}
+
+.achievement-group li {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Styles for the core skills section */
+.info-profile-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.info-profile-image img {
+  max-width: 100px;
+  margin: 10px;
+}

@@ -1,0 +1,29 @@
+/* Styles for the Navbar */
+.navbar {
+  background-color: #333; /* Background color for the Navbar */
+  color: #fff; /* Text color for Navbar links */
+  padding: 10px 0; /* Add some padding for better spacing */
+}
+
+/* Styles for the Navbar links */
+.nav-links {
+  display: flex;
+  justify-content: flex-start; /* Change from space-around to flex-start */
+  text-align: right;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff; /* Text color for links */
+  font-weight: bold; /* Make the text bold */
+  margin: 0 20px;
+  font-size: 20px;
+  color: burlywood; /* Adjust the spacing between links */
+  transition: all 0.3s; /* Add a smooth transition effect for color and zoom */
+}
+
+.nav-links a:hover {
+  color: green; /* Change the color to green on hover */
+  text-decoration: none; /* Remove underline on hover */
+  transform: scale(1.1); /* Zoom in the link on hover */
+}

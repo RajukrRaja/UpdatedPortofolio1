@@ -1,0 +1,138 @@
+/* Styles for the home container */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3062357;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Styles for the left section (photo) */
+.left-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+/* Styles for the profile image */
+.profile-image img {
+  max-width: 70%;
+  margin-bottom: 6cm;
+  margin-right: 3cm;
+  border: 10px solid orange; /* Add a 10px orange border */
+  border-radius: 10px;
+}
+
+/* Styles for the right section (content) */
+.right-section {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+}
+
+/* Styles for the home title */
+.home-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  margin-right: 1cm;
+}
+
+/* Styles for the home description */
+.home-description {
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 600px;
+  padding: 15px;
+  position: relative; /* Needed for the ::before pseudo-element */
+}
+
+/* Add a pulsating border animation */
+.home-description::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 10px solid blue; /* Add a 10px blue border */
+  border-radius: 10px;
+  animation: borderAnimation 2s infinite alternate; /* Apply the pulsating effect */
+  z-index: -1; /* Place it behind the text */
+}
+
+/* Pulsating border animation */
+@keyframes borderAnimation {
+  0% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: blue; /* Change the border color to blue */
+  }
+}
+
+/* Adjusted text color */
+.home-description {
+  color: #ff6600; /* Text color adjustment */
+  margin-bottom: 3cm;
+}
+
+/* Styles for the Call to Action (CTA) buttons */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  margin-right: 5cm;
+
+}
+
+.download-button,
+.hire-button {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover,
+.hire-button:hover {
+  background-color: #f60;
+}
+
+/* Styles for additional content (Services) */
+.additional-content {
+  margin-top: 20px;
+}
+
+.additional-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-bottom: 10px;
+}
+body{
+  background-color: #f60;
+}
+
+hhtml, body{ 
+  width:100%;
+}
+
+body {
+  background-color: black !important;
+}
